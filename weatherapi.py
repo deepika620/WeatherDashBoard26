@@ -108,7 +108,7 @@ if not results:
     st.stop()
     
 options=[
-    f"{r['name']},{r.get('admin1','')}, {r'country'}" for  r in results
+    f"{r['name']},{r.get('admin1','')}, {r['country']}" for  r in results
 ]
 selected=st.selectbox("Select the correct location",
                       range(len(options)),
